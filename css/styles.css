@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tiro Gurmukhi', serif;
+    text-decoration: none;
+}
+#grid-area {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 155px auto 115px;
+    height: 100%;
+    width: 100%;
+
+}
+.header-area {
+    grid-area: header;
+}
+.main-area {
+    grid-area: main;
+}
+.footer-area {
+    grid-area: footer;
+}
+
+
+/*header*/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+}
+.titulo a {
+    color: rgb(116, 2, 2);
+    text-decoration: none;
+}
+.header__div {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.logo-img {
+    width: 75px;
+}
+.barraBusqueda  {
+    width: 300px;
+    padding: 10px;
+}
+
+/* barra de menu */
+.contenedor__menu {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient( #bf7979ae , #720606, #720606, #720606 );
+    padding: 0px 20px;
+}
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+nav {
+    height: 100%;
+}
+nav ul {
+    height: 100%;
+    display: flex;
+}
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color:white;
+    align-items: center;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+}
+/* fin del header */
+
+/* inicio de index */
+/* main */
+main {
+    background-color: gainsboro;
+    padding: 20px;
+}
+
+            /* index */
+.tm-img {
+    height: 270px;
+}
+.container-oferta{
+    display: flex;
+    padding: 10px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-oferta img {
+    width: 100%;
+}
+
+.main-setion a {
+    text-decoration: none;
+    background-color: #720606;
+    display: flex;
+    font-size: 23px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.novedades {
+    background-color: white;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items:center;
+    overflow:scroll;
+}
+
+.novedades .portada {
+    width: 175px;
+    display: inline;
+    text-align: center;
+    transition: width 1s;
+}
+.novedades .portada:hover{
+    width: 200px;
+    box-shadow: 0 0 20px 0;
+    cursor: pointer;
+}
+.novedades .precios {
+    color: black;
+    margin: 15px;
+    text-align:center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+            /* fin deindex */
+
+
+
+
+
+
+
+            /*inicio de  micuenta */
+.main-cuenta{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    padding: 50px;
+}
+.formulario {
+    /* border: 5px solid rgba(0, 0, 0, 0.285); */
+    width: 400px;
+    border-radius: 10px;
+}
+.formulario h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.formulario form{
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+form .username {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.username label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.username span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:#3d120c;
+}
+.username input:focus ~ label,
+.username input:focus ~ label{ 
+    top: -5px;
+    color: #3d120c;
+}
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+.recordar {
+    margin: -5px 0 5px;
+    color: blue;
+    cursor: pointer;
+}
+.recordar:hover {
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #3d120c;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover {
+    font-size: 30px;
+    border-color:#3d120c;
+    transition: .5s;
+}
+.registrarse {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+.registrarse a {
+    color: blue;
+    text-decoration: none;
+}
+.registrarse a:hover {
+    text-decoration: underline;
+}
+/* fin de mi cuenta */
+
+
+
+
+
+
+
+
+/* inicio de libros */
+
+.container-categoria {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+}
+.titulo-categorias {
+    background-color: #720606;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categorias {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.categorias ul li a {
+    color: #3d120c;
+    font-size: 18px;
+    text-decoration: none;
+    list-style-type: square;
+    font-weight: 600;
+
+}
+.libros-titulo {
+    background-color: #720606;
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    border-radius: 20px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.libros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #adadad;
+}
+.item-portada {
+    padding: 5px;
+    width: 165px;
+}
+.item-precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: #3d120c;
+}
+.item-precio a {
+    color: black;
+    text-decoration: none;
+}
+/* fin de lbros */
+
+
+
+
+
+/* inicio de novedades */
+
+.novedades-pag {
+    display: grid;
+    background-color: #adadad;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.portada-nav {
+    width: 165px;
+    padding: 5px;
+}
+.precios-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+     color: #3d120c;
+}
+
+
+
+
+/* inicio de footer */
+
+.container-footer {
+    display: grid;
+    background-color:#720606 ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 75px ;
+    gap: 10px;
+    animation: primera-ani 5s linear 0s infinite;
+}
+
+.container-footer .item-footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes primera-ani {
+    0% {
+        background-color: #3d120c;
+    }
+    50% {
+        background: #a74a4aed;
+    }
+    
+}
+.container-footer .item-footer a {
+    color: white;
+}
+
+.container-footer .item-footer:nth-child(2){
+    grid-row: 1/3;
+    grid-column: 2/3 ;
+    justify-self: end;
+}
+
+.container-footer .item-footer:nth-child(5) {
+    grid-column: -2/-1;
+}
+.container-footer .item-footer img {
+    padding: 5px;
+    height: 75px;
+    width: auto;
+}
+
+/* fin del footer */
+
+
+
