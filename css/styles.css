@@ -107,7 +107,9 @@ main {
 
             /* index */
 .tm-img {
-    height: 270px;
+    cursor: pointer;
+    height: 450px;
+    border-radius: 15px;
 }
 .container-oferta{
     display: flex;
@@ -121,6 +123,7 @@ main {
 }
 
 .main-setion a {
+    border-radius: 15px;
     text-decoration: none;
     background-color: #720606;
     display: flex;
@@ -131,6 +134,7 @@ main {
     margin-top: 20px;
 }
 .novedades {
+    border-radius: 15px;
     background-color: white;
     padding: 20px 20px;
     display: flex;
@@ -176,6 +180,8 @@ main {
 }
 .formulario {
     /* border: 5px solid rgba(0, 0, 0, 0.285); */
+    padding: 5px;
+    background-color: rgba(192, 188, 188, 0.446);
     width: 400px;
     border-radius: 10px;
 }
