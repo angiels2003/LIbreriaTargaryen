@@ -107,6 +107,7 @@ main {
 
             /* index */
 .tm-img {
+    border: 3px solid black;
     cursor: pointer;
     height: 450px;
     border-radius: 15px;
@@ -158,10 +159,17 @@ main {
 .novedades .precios {
     color: black;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
     text-align:center;
+    align-items: center;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 600;
+}
+.novedades .precios a {
+    color: black;
+    text-decoration: none;
 }
             /* fin deindex */
 
@@ -362,7 +370,10 @@ input[type="submit"]:hover {
     display: grid;
     background-color: #adadad;
     padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1425px;
+    margin-inline: auto;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .portada-nav {
     width: 165px;
@@ -371,15 +382,20 @@ input[type="submit"]:hover {
 .precios-nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     font-weight: 600;
      color: #3d120c;
 }
-
+.precios-nav a {
+    color: black;
+    text-decoration: none;
+}
 
 
 
 /* inicio de footer */
+
 
 .container-footer {
     display: grid;
