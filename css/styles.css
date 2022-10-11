@@ -17,7 +17,6 @@
     grid-template-rows: 155px auto 115px;
     height: 100%;
     width: 100%;
-
 }
 .header-area {
     grid-area: header;
@@ -96,7 +95,10 @@ header {
     justify-content: center;
     text-align: center;
 }
-
+li a.active, li a:hover {
+    background-color: #3d120c;
+    border-radius: 15px;
+}
 label {
     display: none;
 }

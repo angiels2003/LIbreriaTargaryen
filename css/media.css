@@ -123,6 +123,19 @@
 
 @media (max-width: 858px) {
 
+  /* inicio de index */
+  #grid-area {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 53px auto 120px;
+    height: 100%;
+    width: 100%;
+  }
+  /* i-header */
   header {
     background: #740202;
   }
@@ -156,12 +169,14 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 70px;
+    top: 52px;
     left: -100%;
-    background: red;
-    width: 100%;
+    background: #740202;
+    width: 45%;
     height: 100vh;
     right: 0;
+    padding: 0;
+    align-items: flex-start;
   }
   .menu ul li {
     padding: 2rem;
@@ -169,10 +184,30 @@
     justify-content: center;
     margin: 0;
   }
+  .menu ul li a {
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
   #check:checked ~ ul {
     left: 0;
     transition: all .25s;
   }
+  /* f-header */
+
+  /* i-main  */
+.tm-img {
+  height: 200px;
+}
+
+
+
+
+
+
 }
 
 
