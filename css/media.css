@@ -100,10 +100,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  /* f-libros  */
 
+/* i-novedades  */
+  .novedades-pag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+/* f-novedades  */
 
+/* i-contacto  */
+  .horario, .ubicacion {
+    display: none;
+  }
+  .main-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .item-cont {
+    padding: 0;
+  }
 }
-
 
 
 

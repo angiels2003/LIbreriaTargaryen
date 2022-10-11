@@ -161,7 +161,7 @@ main {
     transition: width 1s;
 }
 .novedades .portada:hover{
-    width: 200px;
+    width: 185px;
     box-shadow: 0 0 20px 0;
     cursor: pointer;
 }
@@ -354,6 +354,11 @@ input[type="submit"]:hover {
     padding: 15px;
     width: 165px;
 }
+.item-portada:hover{
+    width: 185px;
+    box-shadow: 0 0 20px 0;
+    cursor: pointer;
+}
 .item-precio {
     display: flex;
     flex-direction: column;
@@ -378,7 +383,7 @@ input[type="submit"]:hover {
     display: grid;
     background-color: #adadad;
     padding: 10px;
-    width: 1425px;
+    width: auto;
     margin-inline: auto;
     border-radius: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -386,6 +391,11 @@ input[type="submit"]:hover {
 .portada-nav {
     width: 165px;
     padding: 5px;
+}
+.portada-nav:hover{
+    width: 185px;
+    box-shadow: 0 0 20px 0;
+    cursor: pointer;
 }
 .precios-nav {
     display: flex;
@@ -411,7 +421,9 @@ input[type="submit"]:hover {
     gap:10px;
 }
 .item-cont {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    background-color:white;
     border-radius: 15px;
     padding: 15px;
     text-align: center;
