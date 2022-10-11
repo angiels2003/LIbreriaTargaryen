@@ -53,8 +53,7 @@ header {
 .logo-img {
     width: 75px;
 }
-.barraBusqueda  {
-    width: 300px;
+.barrabusqueda  {
     padding: 10px;
 }
 
@@ -99,7 +98,7 @@ li a.active, li a:hover {
     background-color: #3d120c;
     border-radius: 15px;
 }
-label {
+.checkbtn {
     display: none;
 }
 #check {
@@ -306,7 +305,7 @@ input[type="submit"]:hover {
     border-radius: 20px;
     background-color: #ffffff;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 300px auto;
     grid-template-rows: 1fr auto;
     gap: 10px;
 }
@@ -346,14 +345,13 @@ input[type="submit"]:hover {
 
 .libros {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     border-radius: 20px;
     background-color: #adadad;
 }
 .item-portada {
-    padding: 5px;
+    padding: 15px;
     width: 165px;
 }
 .item-precio {
